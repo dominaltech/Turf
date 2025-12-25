@@ -2863,7 +2863,7 @@ async function loadPreBookedSlots(turfId, date) {
 
         console.log('Checking pre-bookings for date:', date, 'day:', currentDayName);
 
-        preBookings.forEach(preBooking => {
+        existingBookings.forEach(preBooking => {
             console.log('Processing pre-booking:', preBooking);
             
             if (preBooking.booking_type === 'weekly' || preBooking.booking_type === 'custom') {
